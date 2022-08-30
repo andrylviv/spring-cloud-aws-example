@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+
+templates:
+  - event: CREATED
+    subject: "Welcome to EPAM Training"
+    from: andry46lviv@gmail.com
+    template: welcome-template.html
+
+  - event: DELETED
+    subject: "We will miss you!"
+    from: andry46lviv@gmail.com
+    template: bye-bye-template.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

@@ -1,0 +1,6 @@
+server:
+  port: 0
+
+aws:
+  paramstore:
+    enabled: false
