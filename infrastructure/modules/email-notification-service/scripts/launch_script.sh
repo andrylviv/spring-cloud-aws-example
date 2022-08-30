@@ -5,7 +5,7 @@ sudo yum upgrade -y
 sudo yum install git -y
 sudo yum install java-1.8.0-openjdk -y
 sudo yum install maven -y
-git clone https://github.com/Hudyma/spring-cloud-aws-example.git
+git clone https://github.com/andrylviv/spring-cloud-aws-example.git
 cd spring-cloud-aws-example/email-notification-service/
 mvn clean package
 java -jar target/email-notification-service-0.0.1-SNAPSHOT.jar > /home/ec2-user/log &
